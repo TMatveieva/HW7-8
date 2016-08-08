@@ -1,0 +1,598 @@
+.sprite-logo, .author, .post1, .post2, .post3,
+.logo1, .logo2, .logo3, .logo4, .logo5, .logo6 {
+	display: inline-block;
+	background: url(../img/sprite.png) no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+	text-align: left;
+}
+
+.sprite-logo {
+	background-position: 0px 0px;
+	width: 152px;
+	height: 58px;
+}
+
+@font-face {
+    font-family: 'league_gothic';
+    src: url(../fonts/leaguegothic-regular.eot);
+    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
+         url(../fonts/leaguegothic-regular.woff) format('woff'),
+         url(../fonts/leaguegothic-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url(../fonts/opensans-light.eot);
+    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opensans-light.woff2) format('woff2'),
+         url(../fonts/opensans-light.woff) format('woff'),
+         url(../fonts/opensans-light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url(../fonts/opensans-extrabold.eot);
+    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opensans-extrabold.woff2) format('woff2'),
+         url(../fonts/opensans-extrabold.woff) format('woff'),
+         url(../fonts/opensans-extrabold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{  
+	z-index: -16; 
+	position: relative; 
+}
+
+body
+{ 
+	font-family: Arial, Tahoma, sans-serif;
+	position: relative; 
+	z-index: -15;
+	width: 100%; 
+}
+
+.bound {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.wrapper {
+	min-width: 100px;
+	margin: 0 auto;
+	position: relative;
+	z-index: -10;
+}
+
+/*----------------- HEADER -----------------*/
+.header {
+	width: 100%;
+	font-family: "league_gothic";
+	color: #fff;
+	text-align: center;
+	background: url(../img/bg.jpg) no-repeat top center;
+}
+
+.wrapper-logo {
+	overflow: hidden;
+}
+
+.nav__menu480 {
+	position: relative;
+	border: 1px solid transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	z-index: 2;
+}
+
+.nav__menu480 a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-family: "league_gothic";
+    display: block;
+	border-bottom: 2px solid transparent;
+}
+
+.nav__menu480 li {
+	border-bottom: 1px solid #35273d;
+	border-top : 1px solid #695272;
+	position: relative;
+	display: block
+}
+
+.menu480 {
+	position: absolute;
+	top: 100%;
+	border: 1px solid #000;
+	border-top: 1px solid #35273d;
+}
+
+
+.nav__menu480:hover {
+	background-color: rgba(54, 41, 62, 0.8);
+	border: 1px solid #000;
+}
+
+.nav__menu480:hover ul {
+	overflow: hidden;
+	background-color: rgba(54, 41, 62, 0.8);
+	display: block;
+	top: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.menu480__home a {
+    border-top: none;
+    border-bottom: 2px solid transparent;
+}
+
+.menu480__home:after {
+	content: "";
+	position: absolute;
+	border: 1px solid #edbfff;
+}
+
+.nav__menu480 a:hover {
+   border-bottom: 2px solid #edbfff;
+   background-color: rgba(34, 26, 39, 0.8);
+
+}
+.nav__menu480 .menu480__home a:hover {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.nav__menu {
+    overflow: hidden;
+    display: block;
+}
+
+.nav__menu li {
+	float: left;
+}
+
+.nav__menu li a {
+	color: #fff;
+	font-family: "league_gothic";
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+}
+
+.nav__menu li a:hover {
+	border-bottom: 2px solid #edbfff;
+}
+
+
+.shadow-backgr {
+	position: relative;
+}
+
+.slider {
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+	z-index: 1;
+	overflow: hidden;
+}
+
+
+.slider__img {
+	height: 298px;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+.wrapper-slider {
+	display: inline-block;
+	width: 80%;
+	text-align: center;
+}
+
+.slider__left-arr {
+	float: left;
+}
+
+.slider__right-arr {
+	float: right;
+}
+
+.slider__title {
+	display: inline;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider__subtitle {
+ 	text-transform: uppercase;
+ 	color: #edbfff;
+ 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider__text {
+	display: block;
+	font-family: 'open_sanslight';
+	font-size: 16px;
+	line-height: 26px;
+	width: 45%;
+	height: 100px;
+	overflow: hidden;
+	letter-spacing: -0.04px;
+}
+
+.slider__selector {
+	position: relative;
+	z-index: 2;
+}
+
+.active-selector a {
+	background-color: #fff;
+}
+
+.selector, .selector--inform {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: rgba(25, 0, 3, 0.5);
+}
+
+.selector a, .selector--inform a {
+	text-decoration: none;
+	border-radius: 50%;
+	width: 12px;
+	display: block;
+	margin-top: 2px;
+	height: 12px;
+	margin-left: 2px;
+	transition: all 0.5s ease-in;
+}
+
+.selector a:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: all 0.5s ease-in;
+}
+
+/*----------------- ABOUT -----------------*/
+.about {
+	position: relative;
+	color: #fff;
+	background: rgba(116,80,131,1);
+	background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.11);
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #fff;
+}
+
+.about__title {
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	font-family: 'league_gothic';
+	position: relative;
+}
+
+.notes:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -367px -31px;
+	width: 29px;
+	height: 31px; 
+}
+
+.cloud:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -60px -300px;
+	width: 33px;
+	height: 29px;
+}
+
+.wrench:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -367px 0px; 
+	width: 30px; 
+	height: 31px;
+}
+
+.about__text {
+	font-family: 'open_sanslight';
+	overflow: hidden;
+	text-shadow: 0px 1px 0px #0f1518;
+}
+
+.about__more {
+	font-family: 'league_gothic';
+	text-transform: uppercase;
+	text-align: right;
+	text-decoration: none;
+	color: #fff;
+}
+
+.about__more a {
+	text-decoration: none;
+	color: #fff;	
+}
+.about__more:hover {
+	text-shadow: 1px 1px 8px #fff;
+}
+
+/*----------------- INFORM -----------------*/
+.inform {
+	position: relative;
+	z-index: -1;
+	overflow: hidden;
+	background-color: #f9f9f9;
+	color: #454545;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.inform__author {
+	position: relative;
+	background-color: #fff;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.author {
+	background-position: -78px -134px;
+	width: 50px;
+	height: 51px; 
+	position: absolute;
+}
+
+.author__title {
+	font-family: "league_gothic";
+	text-transform: uppercase;
+	float: left;
+}
+
+.author__subtitle {
+	color: #edbfff;
+}
+
+.author__text {
+	font-family: 'open_sanslight';
+	overflow: hidden;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.slider__selector--inform {
+	text-align: center;
+}
+
+.slider__selector--inform .selector--inform {
+	border: 1px solid #dadada;
+	background-color: #fff;
+	
+}
+.slider__selector--inform .selector--inform a {
+	background-color: transparent;
+	
+}
+.slider__selector--inform .selector--inform a:hover {
+	background: rgba(106,106,106,1);
+	background: linear-gradient(to bottom, rgba(106,106,106,1) 0%, rgba(69,69,69,1) 100%);
+}
+
+
+.active-blog a {
+	background: rgba(106,106,106,1) ;
+	background: linear-gradient(to bottom, rgba(106,106,106,1) 0%, rgba(69,69,69,1) 100%);
+}
+
+
+
+.inform__updates {
+	position: relative;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.updates__title {
+	font-family: "league_gothic";
+	text-transform: uppercase;
+}
+
+.updates__post {
+	position: relative;
+}
+
+.post1 {
+	background-position: -177px -134px;
+}
+
+.post2 {
+	background-position: -128px -134px; 
+}
+
+.post3 {
+	background-position: -238px -195px;
+}
+
+
+.post0 {
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.post__title {
+	font-family: 'open_sansextrabold';
+	overflow: hidden;
+}
+
+.post__text {
+	font-family: 'open_sanslight';
+	overflow: hidden;
+}
+
+.updates__more {
+	font-family: 'league_gothic';
+	text-transform: uppercase;
+	text-align: right;
+	text-decoration: none;
+	color: #fff;
+	position: absolute;
+}
+
+.updates__more a {
+	color: #454545;
+	text-decoration: none;
+}
+
+.updates__more a:hover {
+	color: #888;
+}
+
+/*----------------- LOGOS -----------------*/
+.logos {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: #f9f9f9;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.logos-bound {
+	position: relative;
+}
+	
+.logo1 {
+	background-position: -230px -128px;
+	width: 69px;
+	height: 64px;
+}
+
+.logo1:hover {
+	background-position: 0px -195px; 
+	width: 69px;
+	height: 64px;
+}
+
+.logo2 {
+	background-position: -230px 0px;
+	width: 72px;
+	height: 64px;
+}
+
+.logo2:hover {
+	background-position: -76px -58px; 
+	width: 72px;
+	height: 64px;  
+}
+
+.logo3 {
+	background-position: -302px 0px;
+	width: 65px;
+	height: 65px;
+}
+
+.logo3:hover {
+	background-position: -302px -130px;
+	width: 65px;
+	height: 65px;
+}
+
+.logo4 {
+	background-position: -188px -195px;
+	width: 50px;
+	height: 63px;
+}
+
+.logo4:hover {
+	background-position: -302px -195px;
+	width: 50px;
+	height: 63px;
+}
+
+.logo5 {
+	background-position: 0px -259px;
+	width: 103px;
+	height: 21px;
+}
+
+.logo5:hover {
+	background-position: -206px -259px;
+	width: 103px;
+	height: 21px;
+}
+
+.logo6 {
+	background-position: 0px -134px;
+	width: 78px;
+	height: 61px;
+}
+
+.logo6:hover {
+	background-position: -152px -61px;
+	width: 78px;
+	height: 61px;
+}
+
+/*----------------- CATEGORIES -----------------*/
+.categories {
+	display: block;
+	overflow: hidden;
+	background-color: #ececec;
+	border-top: 1px solid #bbbbbb;
+}
+
+.blog__title {
+	font-family: "league_gothic";
+}
+
+.blog__text {
+	color: #787878;
+	font-family: 'open_sanslight';
+	overflow: hidden;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+/*----------------- FOOTER -----------------*/
+footer {
+	overflow: hidden;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	background: url(../img/bg-footer.jpg) no-repeat center top;
+}
+
+.footer__menu {
+	overflow: hidden;
+	display: block;
+}
+
+.footer__menu li a {
+	color: #fff;
+	font-family: "league_gothic";
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #000;
+}
+
+.footer__text {
+	font-family:'open_sanslight';
+	text-shadow: 1px 1px 3px #000;
+}
+
+.footer__text span {
+	font-family: 'open_sansextrabold';
+}
